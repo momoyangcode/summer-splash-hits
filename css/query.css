@@ -205,9 +205,6 @@
         margin: 5rem 6rem;
     }
 
-    .newspaper-subscribe-text-box p {
-        font-size: 1.6rem;
-    }
 }
 
 /**************************/
@@ -353,8 +350,8 @@
     }
 
     .newspaper-subscribe-text-box h1 {
-        font-size: 3.2rem;
-        text-align: start;
+        font-size: 4.2rem;
+        text-align: center;
     }
 
     .footer-links-box {
