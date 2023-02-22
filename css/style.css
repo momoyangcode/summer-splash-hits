@@ -732,9 +732,9 @@
     gap: 2rem;
 }
 
-.footer-links:hover,
-.footer-links:active {
-    opacity: 0.7;
+.footer-link:hover,
+.footer-link:active {
+    opacity: 0.5;
 }
 
 
