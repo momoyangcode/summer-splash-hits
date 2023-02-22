@@ -647,7 +647,7 @@
     justify-content: center;
 }
 
-.sponsors-box {
+.donors-box {
     margin: 0 auto;
     align-self: center;
     column-gap: 2rem;
@@ -655,7 +655,7 @@
     padding: 0 12rem;
 }
 
-.sponsors-box img {
+.donors-box img {
     width: 30%;
     /* filter: brightness(0) invert(1); */
 }
