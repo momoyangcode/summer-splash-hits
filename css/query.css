@@ -357,6 +357,10 @@
         text-align: start;
     }
 
+    .footer-links-box {
+        column-gap: 10rem;
+    }
+
 }
 
 /**************************/
@@ -468,6 +472,10 @@
         grid-column: span 2;
         padding: 1rem;
         font-size: 3rem;
+    }
+
+    .footer-links-box {
+        column-gap: 8rem;
     }
 
 }

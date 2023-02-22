@@ -680,7 +680,7 @@
 }
 
 .follow-social-media-icons-box {
-    gap: 6rem;
+    gap: 10rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -714,7 +714,7 @@
 
 .footer-links-box {
     margin: 0 auto;
-    column-gap: 6rem;
+    column-gap: 16rem;
     align-items: center;
 }
 
