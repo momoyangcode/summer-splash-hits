@@ -4,9 +4,34 @@
 
 .first-line-header {
     justify-content: space-between;
-    padding: 1rem 30rem;
+    padding: 1rem 13rem;
     background: rgb(131, 58, 180);
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 118, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    gap: 0.2rem;
+}
+
+.countdown {
+    gap: 1.6rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.countdown p {
+    border-radius: 4px;
+    padding: 0.7rem;
+    background-color: #f02d0f;
+    font-weight: 700;
+}
+
+.countdown span {
+    font-weight: 600;
 }
 
 .social-media-icons {
@@ -20,16 +45,15 @@
 }
 
 
-
 .social-media-img {
-    height: 2.6rem;
+    height: 2.3rem;
     /* filter: brightness(0);
     opacity: 50%; */
 }
 
 .second-line-header {
     justify-content: space-between;
-    padding: 1.5rem 13rem 1.5rem 30rem;
+    padding: 1.5rem 9rem 1.5rem 13rem;
     background-color: #f6ecec;
 }
 

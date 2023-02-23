@@ -9,10 +9,6 @@
         padding: 3rem 10rem;
     }
 
-    .second-line-header {
-        padding: 1.5rem 13rem;
-    }
-
     .ticket-box {
         padding: 4rem 20rem;
     }
@@ -77,10 +73,6 @@
         font-size: 56.5%;
     }
 
-    .first-line-header {
-        padding: 1rem 20rem;
-    }
-
     .second-line-header {
         padding: 1.5rem 8rem;
     }
@@ -118,10 +110,6 @@
     html {
         /* 9px / 16px  */
         font-size: 54%;
-    }
-
-    .first-line-header {
-        padding: 1rem 18rem;
     }
 
     .second-line-header {
@@ -186,6 +174,10 @@
     html {
         /* 9px / 16px  */
         font-size: 50%;
+    }
+
+    .primary-heading {
+        font-size: 7.6rem;
     }
 
     .right-header-menu {
@@ -273,6 +265,7 @@
         font-size: 6.2rem;
         padding: 2rem;
     }
+
 
     .primary-heading::before {
         top: -44%;
