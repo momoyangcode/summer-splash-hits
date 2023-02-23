@@ -365,7 +365,7 @@
 }
 
 .ticket-bg {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, -1.5)), url(../ticket-bg-images/luke-chesser-eICUFSeirc0-unsplash.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, -1.5)), url(../ticket-bg-image/ticket-bg-img.jpg);
 }
 
 .ticket-type {
