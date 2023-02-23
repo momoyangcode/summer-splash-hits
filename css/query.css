@@ -321,7 +321,7 @@
 
     .gallery-grid-box {
         padding: 2rem 2rem;
-        gap: 1.4rem
+        column-gap: 2.8rem;
     }
 
     .newspaper-subscribe-text-box {
