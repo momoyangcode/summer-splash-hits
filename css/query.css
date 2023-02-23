@@ -52,13 +52,26 @@
         font-size: 1.8rem;
     }
 
+    .ticket-box {
+        padding: 4rem 12rem;
+    }
+
+    .ticket-type {
+        font-size: 3.3rem;
+    }
+
     .cta-ticket h3 {
         padding: 1.2rem;
         font-size: 2.2rem;
     }
 
+    .newspaper-subscribe-text-box h1 {
+        font-size: 3.8rem;
+    }
+
     .subscribe-button {
         font-size: 2.2rem;
+        width: 100%;
     }
 }
 
@@ -81,6 +94,7 @@
         padding: 3rem 6rem;
     }
 
+
     .ticket-type {
         font-size: 3rem;
     }
@@ -95,6 +109,10 @@
 
     .newspaper-box {
         margin: 5rem 14rem;
+    }
+
+    .newspaper-subscribe-text-box h1 {
+        font-size: 3.6rem;
     }
 
     .follow-social-media-icons-box {
@@ -176,8 +194,16 @@
         font-size: 50%;
     }
 
-    .primary-heading {
-        font-size: 7.6rem;
+    .first-line-header {
+        padding: 1rem 8rem 1rem 13rem;
+    }
+
+    .second-line-header {
+        padding: 1.5rem 4rem;
+    }
+
+    .section-hero {
+        padding: 16rem 20rem 26rem 20rem;
     }
 
     .right-header-menu {
@@ -295,6 +321,7 @@
 
     .gallery-grid-box {
         padding: 2rem 2rem;
+        gap: 1.4rem
     }
 
     .newspaper-subscribe-text-box {
@@ -318,8 +345,13 @@
     }
 
     .section-hero {
-        padding: 16rem 20rem 26rem 20rem;
+        padding: 16rem 16rem 26rem 16rem;
         margin: 0 auto;
+    }
+
+
+    .primary-heading {
+        font-size: 6.2rem;
     }
 
     .primary-heading::before {
@@ -342,13 +374,25 @@
         padding: 12rem 6rem;
     }
 
+    .newspaper-box {
+        margin: 5rem 3rem;
+    }
+
     .newspaper-subscribe-text-box h1 {
-        font-size: 4.2rem;
+        font-size: 4rem;
         text-align: center;
     }
 
     .footer-links-box {
         column-gap: 10rem;
+    }
+
+    .donors-box img {
+        width: 40%;
+    }
+
+    .donors-box .smaller-logo {
+        width: 60%;
     }
 
 }
@@ -374,12 +418,12 @@
         font-size: 2.8rem;
     }
 
-    .section-hero {
-        padding: 16rem 20rem;
+    .primary-heading {
+        font-size: 5.8rem;
     }
 
-    .primary-heading {
-        font-size: 4.8rem;
+    .section-secondary-heading {
+        padding: 0 6rem;
     }
 
     .btn-cta:link,
@@ -417,7 +461,7 @@
     .ticket-box {
         grid-template-columns: 1fr;
         row-gap: 4rem;
-        padding: 8rem 16rem 4rem 16rem;
+        padding: 4rem 14rem;
     }
 
     .ticket-price-range {
@@ -430,6 +474,7 @@
 
     .gallery-grid-box {
         grid-template-columns: repeat(2, 1fr);
+        gap: 3.6rem
     }
 
     .newspaper-box {
@@ -450,7 +495,8 @@
         grid-column-end: 3;
     }
 
-    .cta-form input {
+    .cta-form input,
+    .subscribe-button {
         width: 88%;
     }
 
@@ -489,6 +535,10 @@
         font-size: 2.4rem;
     }
 
+    .section-secondary-heading {
+        padding: 0 2rem;
+    }
+
     .social-media-icons {
         display: none;
     }
@@ -504,6 +554,10 @@
     .lineup-artist-name-first-line,
     .lineup-artist-name-second-line {
         font-size: 3.6rem;
+    }
+
+    .ticket-box {
+        padding: 4rem 10rem;
     }
 
     .ticket-type {
@@ -525,6 +579,10 @@
 
     .gallery-img-4 {
         background-position: top;
+    }
+
+    .newspaper-subscribe-text-box h1 {
+        font-size: 3.4rem;
     }
 
     .follow-social-media-img {
@@ -575,6 +633,10 @@
         font-size: 1.4rem;
     }
 
+    .section-secondary-heading {
+        padding: 0;
+    }
+
     .city-link:link,
     .city-link:visited {
         font-size: 2.8rem;
@@ -604,7 +666,7 @@
     }
 
     .ticket-box {
-        padding: 8rem 4rem 4rem 4rem;
+        padding: 4rem;
     }
 
     .ticket-type {
@@ -628,7 +690,16 @@
         column-gap: 2.8rem;
     }
 
-    .cta-form input {
+    .newspaper-subscribe-text-box {
+        padding: 5rem 2rem;
+    }
+
+    .newspaper-subscribe-text-box h1 {
+        font-size: 3.2rem;
+    }
+
+    .cta-form input,
+    .subscribe-button {
         width: 100%;
     }
 
@@ -641,11 +712,11 @@
     }
 
     .donors-box img {
-        width: 40%;
+        width: 50%;
     }
 
     .donors-box .smaller-logo {
-        width: 60%;
+        width: 70%;
     }
 
     .follow-us-text {
@@ -681,10 +752,6 @@
 
     .container {
         padding: 6rem 2rem;
-    }
-
-    .newspaper-subscribe-text-box {
-        padding: 5rem 2rem;
     }
 
     .follow-social-media-img {
