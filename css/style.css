@@ -305,32 +305,32 @@
 }
 
 .lineup-img-1 {
-    background-image: url(../lineup-image/markus-stephen-griffiths-MtSF6U6gy2Q-unsplash.jpg);
+    background-image: url(../lineup-image/lineup-img-1.jpg);
     background-position: center;
 }
 
 .lineup-img-2 {
-    background-image: url(../lineup-image/jose-pinto-XR9ZJ_Q-BAI-unsplash.jpg);
+    background-image: url(../lineup-image/lineup-img-2.jpg);
 }
 
 .lineup-img-3 {
-    background-image: url(../lineup-image/vidar-nordli-mathisen-ABHgx0QXFV0-unsplash.jpg);
+    background-image: url(../lineup-image/lineup-img-3.jpg);
 }
 
 .lineup-img-4 {
-    background-image: url(../lineup-image/xandro-vandewalle-L2fD0IIpXXc-unsplash.jpg);
+    background-image: url(../lineup-image/lineup-img-4.jpg);
 }
 
 .lineup-img-5 {
-    background-image: url(../lineup-image/jakayla-toney-pleAbnSa77g-unsplash.jpg);
+    background-image: url(../lineup-image/lineup-img-5.jpg);
 }
 
 .lineup-img-6 {
-    background-image: url(../lineup-image/brian-lundquist-3dC4Einfda0-unsplash.jpg);
+    background-image: url(../lineup-image/lineup-img-6.jpg);
 }
 
 .lineup-img-7 {
-    background-image: url(../lineup-image/anima-visual-WZz3e0GuZaM-unsplash.jpg);
+    background-image: url(../lineup-image/lineup-img-7.jpg);
 }
 
 /**************************/
@@ -657,7 +657,10 @@
 
 .donors-box img {
     width: 30%;
-    /* filter: brightness(0) invert(1); */
+}
+
+.donors-box .smaller-logo {
+    width: 50%;
 }
 
 /**************************/
