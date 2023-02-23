@@ -424,7 +424,7 @@
     .ticket-box {
         grid-template-columns: 1fr;
         row-gap: 4rem;
-        padding: 8rem 12rem 4rem 12rem;
+        padding: 8rem 16rem 4rem 16rem;
     }
 
     .ticket-price-range {
