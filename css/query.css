@@ -271,11 +271,8 @@
         visibility: hidden;
     }
 
-    .nav-open .main-nav {
-        opacity: 1;
-        pointer-events: auto;
-        visibility: visible;
-        transform: translateX(0);
+    .main-nav {
+        display: none;
     }
 
     .nav-open .icon-mobile-nav[name="close-outline"] {
@@ -285,6 +282,7 @@
     .nav-open .icon-mobile-nav[name="menu-outline"] {
         display: none;
     }
+
 
 
     .primary-heading {
