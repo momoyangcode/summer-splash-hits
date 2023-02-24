@@ -732,6 +732,7 @@
     background-color: #257c90;
     flex-direction: column;
     gap: 10rem;
+    padding: 6rem 10rem 3rem 10rem;
 }
 
 .footer-title {
@@ -766,9 +767,9 @@
 
 .footer-text {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 .copyright-text {
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.6rem;
 }
