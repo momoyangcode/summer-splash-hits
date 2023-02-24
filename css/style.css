@@ -643,7 +643,6 @@
 .subscribe-button:hover,
 .subscribe-button:active {
     background-color: #87189d;
-    transform: translateY(-0.5rem);
 }
 
 .cta-form input::placeholder {
