@@ -164,6 +164,11 @@
         padding: 10rem;
     }
 
+    .lineup-artist-name-second-line {
+        font-size: 2.1rem;
+    }
+
+
     .ticket-box {
         padding: 4rem 12rem;
     }
@@ -273,8 +278,12 @@
         padding: 3rem 0;
     }
 
+    .lineup-artist-name-second-line {
+        font-size: 1.8rem;
+    }
+
     .ticket-box {
-        padding: 4rem 6rem;
+        padding: 4rem 2rem;
     }
 
     .ticket-type {
