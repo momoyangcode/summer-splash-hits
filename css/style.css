@@ -304,7 +304,6 @@
     border-radius: 13px;
     overflow: hidden;
     transition: all 0.2s;
-    filter: brightness(0.8);
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: translateZ(0);
@@ -322,7 +321,6 @@
 .lineup-img-box:hover,
 .lineup-img-box:active {
     border: 4px solid hsl(176, 68%, 40%);
-    filter: brightness(1);
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -352,6 +350,7 @@
 
 .lineup-img-6 {
     background-image: url(../lineup-image/lineup-img-6.jpg);
+    background-position: center;
 }
 
 .lineup-img-7 {
