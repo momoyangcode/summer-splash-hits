@@ -149,7 +149,10 @@
                 </h4>
             </div>
 
-            <nav class="main-nav">
+            <nav class="main-nav sidebar" id="mySidebar">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
                 <ul class="right-header-menu diflex align-center" id="myLinks">
 
                     <li class="menu-lists">
@@ -179,10 +182,21 @@
                 </ul>
             </nav>
 
-            <button class="btn-mobile-nav">
-                <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-                <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-            </button>
+            <div class="btn-mobile-nav" id="main">
+                <button class="openbtn" onclick="openNav()">☰</button>
+            </div>
+
+            <script>
+                function openNav() {
+                    document.getElementById("mySidebar").style.width = "25rem";
+                    document.getElementById("main").style.marginLeft = "25rem";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidebar").style.width = "0";
+                    document.getElementById("main").style.marginLeft = "0";
+                }
+            </script>
 
         </div>
 
