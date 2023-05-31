@@ -1,710 +1,712 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;500;600;700&family=Satisfy&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;500;600;700&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/query.css">
-
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/query.css" />
 
     <title>Summer Splash Hits 2023</title>
-</head>
+  </head>
 
-
-
-
-<body>
+  <body>
     <header class="header">
+      <div class="first-line-header diflex align-center">
+        <div class="countdown diflex">
+          <div class="days diflex align-center">
+            <p id="days"></p>
+            <span> Days</span>
+          </div>
 
-        <div class="first-line-header diflex align-center">
+          <div class="hours diflex align-center">
+            <p id="hours"></p>
+            <span> Hrs</span>
+          </div>
 
-            <div class="countdown diflex">
+          <div class="minutes diflex align-center">
+            <p id="minutes"></p>
+            <span> Min</span>
+          </div>
 
-                <div class="days diflex align-center">
-                    <p id="days"></p>
-                    <span> Days</span>
-                </div>
+          <div class="seconds diflex align-center">
+            <p id="seconds"></p>
+            <span> Sec</span>
+          </div>
 
-                <div class="hours diflex align-center">
-                    <p id="hours"></p>
-                    <span> Hrs</span>
-                </div>
+          <script>
+            // Set the date we're counting down to
+            const countDownDate = new Date(
+              "August 26, 2023 12:00:00"
+            ).getTime();
 
+            // Update the count down every 1 second
+            const x = setInterval(function () {
+              // Get today's date and time
+              const now = new Date().getTime();
 
-                <div class="minutes diflex align-center">
-                    <p id="minutes"></p>
-                    <span> Min</span>
-                </div>
+              // Find the distance between now and the count down date
+              const distance = countDownDate - now;
 
-                <div class="seconds diflex align-center">
-                    <p id="seconds"></p>
-                    <span> Sec</span>
-                </div>
+              // Time calculations for days, hours, minutes and seconds
+              const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              const hours = Math.floor(
+                (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+              );
+              const minutes = Math.floor(
+                (distance % (1000 * 60 * 60)) / (1000 * 60)
+              );
+              const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                <script>
-                    // Set the date we're counting down to
-                    var countDownDate = new Date("August 26, 2023 12:00:00").getTime();
+              document.getElementById("days").innerHTML = days;
+              document.getElementById("hours").innerHTML = hours;
+              document.getElementById("minutes").innerHTML = minutes;
+              document.getElementById("seconds").innerHTML = seconds;
 
-                    // Update the count down every 1 second
-                    var x = setInterval(function () {
-
-                        // Get today's date and time
-                        var now = new Date().getTime();
-
-                        // Find the distance between now and the count down date
-                        var distance = countDownDate - now;
-
-                        // Time calculations for days, hours, minutes and seconds
-                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-
-                        document.getElementById("days").innerHTML = days;
-                        document.getElementById("hours").innerHTML = hours;
-                        document.getElementById("minutes").innerHTML = minutes;
-                        document.getElementById("seconds").innerHTML = seconds;
-
-
-                        // If the count down is over, write some text 
-                        if (distance < 0) {
-                            clearInterval(x);
-                            document.getElementById("demo").innerHTML = "EXPIRED";
-                        }
-                    }, 1000);
-                </script>
-
-
-            </div>
-
-            <ul class="social-media-icons diflex align-center">
-                <li>
-                    <a class="social-media-link" href="https://www.facebook.com/">
-                        <img class="social-media-img" src="social-media-icon/facebook.png" alt="Facebook Icon">
-                    </a>
-                </li>
-
-                <li>
-                    <a class="social-media-link" href="https://www.instagram.com/">
-                        <img class="social-media-img" src="social-media-icon/instagram.png" alt="Instagram Icon">
-                    </a>
-                </li>
-
-                <li>
-                    <a class="social-media-link" href="https://twitter.com/">
-                        <img class="social-media-img" src="social-media-icon/twitter.png" alt="Twitter Icon">
-                    </a>
-                </li>
-
-                <li>
-                    <a class="social-media-link" href="https://www.youtube.com/">
-                        <img class="social-media-img" src="social-media-icon/youtube.png" alt="Youtube Icon">
-                    </a>
-                </li>
-
-                <li>
-                    <a class="social-media-link" href="https://www.tiktok.com/en/">
-                        <img class="social-media-img" src="social-media-icon/tik-tok.png" alt="Tiktok Icon">
-                    </a>
-                </li>
-
-                <li>
-                    <a class="social-media-link" href="https://open.spotify.com/">
-                        <img class="social-media-img" src="social-media-icon/spotify-svgrepo-com.svg"
-                            alt="Spotify Icon">
-                    </a>
-                </li>
-
-                <li>
-                    <a class="social-media-link" href="https://www.google.com/intl/hr/gmail/about/">
-                        <img class="social-media-img" src="social-media-icon/email-8-svgrepo-com.svg" alt="Email Icon">
-                    </a>
-                </li>
-
-
-            </ul>
-
+              // If the count down is over, write some text
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+          </script>
         </div>
 
+        <ul class="social-media-icons diflex align-center">
+          <li>
+            <a class="social-media-link" href="https://www.facebook.com/">
+              <img
+                class="social-media-img"
+                src="social-media-icon/facebook.png"
+                alt="Facebook Icon"
+              />
+            </a>
+          </li>
 
-        <div class="second-line-header diflex align-center">
-            <div class="left-header-title diflex">
-                <h2 class="festival-title">Summer Splash Hits 2023</h2>
-                <h4 class="festival-date">26–28 August 2023
-                </h4>
-            </div>
+          <li>
+            <a class="social-media-link" href="https://www.instagram.com/">
+              <img
+                class="social-media-img"
+                src="social-media-icon/instagram.png"
+                alt="Instagram Icon"
+              />
+            </a>
+          </li>
 
-            <nav class="main-nav sidebar" id="mySidebar">
+          <li>
+            <a class="social-media-link" href="https://twitter.com/">
+              <img
+                class="social-media-img"
+                src="social-media-icon/twitter.png"
+                alt="Twitter Icon"
+              />
+            </a>
+          </li>
 
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <li>
+            <a class="social-media-link" href="https://www.youtube.com/">
+              <img
+                class="social-media-img"
+                src="social-media-icon/youtube.png"
+                alt="Youtube Icon"
+              />
+            </a>
+          </li>
 
-                <ul class="right-header-menu diflex align-center" id="myLinks">
+          <li>
+            <a class="social-media-link" href="https://www.tiktok.com/en/">
+              <img
+                class="social-media-img"
+                src="social-media-icon/tik-tok.png"
+                alt="Tiktok Icon"
+              />
+            </a>
+          </li>
 
-                    <li class="menu-lists">
-                        <a href="#" class="lists-link">Tickets</a>
-                    </li>
+          <li>
+            <a class="social-media-link" href="https://open.spotify.com/">
+              <img
+                class="social-media-img"
+                src="social-media-icon/spotify-svgrepo-com.svg"
+                alt="Spotify Icon"
+              />
+            </a>
+          </li>
 
-                    <li class="menu-lists">
-                        <a href="#" class="lists-link">Lineup</a>
-                    </li>
+          <li>
+            <a
+              class="social-media-link"
+              href="https://www.google.com/intl/hr/gmail/about/"
+            >
+              <img
+                class="social-media-img"
+                src="social-media-icon/email-8-svgrepo-com.svg"
+                alt="Email Icon"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
 
-                    <li class="menu-lists">
-                        <a href="#" class="lists-link">Locations</a>
-                    </li>
-
-                    <li class="menu-lists">
-                        <a href="#" class="lists-link">News</a>
-                    </li>
-
-                    <li class="menu-lists">
-                        <a href="#" class="lists-link">Info</a>
-                    </li>
-
-                    <li class="menu-lists">
-                        <a href="#" class="lists-link">FAQ</a>
-                    </li>
-
-                </ul>
-            </nav>
-
-            <div class="btn-mobile-nav" id="main">
-                <button class="openbtn" onclick="openNav()">☰</button>
-            </div>
-
-            <script>
-                function openNav() {
-                    document.getElementById("mySidebar").style.width = "25rem";
-                    document.getElementById("main").style.marginLeft = "25rem";
-                }
-
-                function closeNav() {
-                    document.getElementById("mySidebar").style.width = "0";
-                    document.getElementById("main").style.marginLeft = "0";
-                }
-            </script>
-
+      <div class="second-line-header diflex align-center">
+        <div class="left-header-title diflex">
+          <h2 class="festival-title">Summer Splash Hits 2023</h2>
+          <h4 class="festival-date">26–28 August 2023</h4>
         </div>
 
+        <nav class="main-nav sidebar" id="mySidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >×</a
+          >
+
+          <ul class="right-header-menu diflex align-center" id="myLinks">
+            <li class="menu-lists">
+              <a href="#" class="lists-link">Tickets</a>
+            </li>
+
+            <li class="menu-lists">
+              <a href="#" class="lists-link">Lineup</a>
+            </li>
+
+            <li class="menu-lists">
+              <a href="#" class="lists-link">Locations</a>
+            </li>
+
+            <li class="menu-lists">
+              <a href="#" class="lists-link">News</a>
+            </li>
+
+            <li class="menu-lists">
+              <a href="#" class="lists-link">Info</a>
+            </li>
+
+            <li class="menu-lists">
+              <a href="#" class="lists-link">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="btn-mobile-nav" id="main">
+          <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
+
+        <script>
+          function openNav() {
+            document.getElementById("mySidebar").style.width = "25rem";
+            document.getElementById("main").style.marginLeft = "25rem";
+          }
+
+          function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+          }
+        </script>
+      </div>
     </header>
 
     <main>
+      <section class="section-hero">
+        <!-- <video class="bg-video" src="Background- music-festival.mov" muted autoplay loop></video> -->
 
-        <section class="section-hero">
+        <div class="hero">
+          <h1 class="primary-heading margin-bottom">Summer Splash Hits</h1>
 
-            <!-- <video class="bg-video" src="Background- music-festival.mov" muted autoplay loop></video> -->
+          <div class="festival-location">
+            <div class="in">in</div>
+            <a
+              href="https://croatia.hr/en-gb/regions/dalmatia-sibenik"
+              class="city-link"
+              >Šibenik, Croatia</a
+            >
+          </div>
 
-            <div class="hero">
+          <a href="#" class="btn-cta">Get your tickets</a>
 
-                <h1 class="primary-heading margin-bottom">Summer Splash Hits</h1>
+          <p class="hero-description">
+            "Summer Splash Hits 2023" is a music festival taking place in the
+            stunning coastal city of Šibenik, Croatia from August 26th to 28th,
+            2023. With its unique location and breathtaking views of the
+            Adriatic Sea, which offers festival-goers a once-in-a-lifetime
+            experience. Whether you're a fan of pop, hip-hop, electronic dance
+            music or any other genre, you're sure to find something you love!
+          </p>
+        </div>
+      </section>
 
-                <div class="festival-location ">
-                    <div class="in">in</div>
-                    <a href="https://croatia.hr/en-gb/regions/dalmatia-sibenik" class="city-link">Šibenik,
-                        Croatia</a>
-                </div>
+      <section class="section-lineup container text-center">
+        <div class="lineup">
+          <div class="section-textbox">
+            <a class="heading-link" href="">
+              <h1 class="section-primary-heading">2023 Lineup</h1>
+            </a>
+            <h2 class="section-secondary-heading">
+              Experience Unforgettable Summer Beats!
+            </h2>
+          </div>
 
-                <a href="#" class="btn-cta">Get your tickets</a>
-
-                <p class="hero-description">"Summer Splash Hits 2023" is a music festival taking place in the stunning
-                    coastal city of Šibenik, Croatia from August 26th to 28th, 2023. With its unique location and
-                    breathtaking views of the Adriatic Sea, which offers festival-goers a once-in-a-lifetime experience.
-                    Whether you're a fan of pop, hip-hop, electronic dance music or any other genre, you're sure to find
-                    something you love!
-                </p>
+          <div class="gridbox grid-3-cols align-center col-gap lineup-box">
+            <div class="lineup-img-box lineup-img-1">
+              <div class="lineup-name-link">
+                <h1 class="lineup-artist-name-first-line">
+                  Beyond–C
+                  <span class="lineup-artist-nationality-first-line">US</span>
+                </h1>
+              </div>
             </div>
 
-        </section>
-
-        <section class="section-lineup container text-center">
-            <div class="lineup">
-                <div class="section-textbox">
-                    <a class="heading-link" href="">
-                        <h1 class="section-primary-heading">2023 Lineup</h1>
-                    </a>
-                    <h2 class="section-secondary-heading">Experience Unforgettable Summer Beats!</h2>
-                </div>
-
-                <div class="gridbox grid-3-cols align-center col-gap lineup-box">
-
-                    <div class="lineup-img-box lineup-img-1">
-
-                        <div class="lineup-name-link">
-                            <h1 class="lineup-artist-name-first-line">Beyond–C
-                                <span class="lineup-artist-nationality-first-line">US</span>
-                            </h1>
-                        </div>
-
-                    </div>
-
-                    <div class="lineup-img-box lineup-img-2">
-
-                        <div class="lineup-name-link">
-                            <h1 class="lineup-artist-name-first-line">Tyler Slow
-                                <span class="lineup-artist-nationality-first-line">UK</span>
-                            </h1>
-                        </div>
-
-                    </div>
-
-                    <div class="lineup-img-box lineup-img-3">
-
-                        <div class="lineup-name-link">
-                            <h1 class="lineup-artist-name-first-line">The Daily Joys
-                                <span class="lineup-artist-nationality-first-line">FR</span>
-                            </h1>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="gridbox grid-4-cols align-center col-gap lineup-box">
-
-                    <div class="lineup-img-box lineup-img-4">
-
-                        <div class="lineup-name-link">
-                            <h1 class="lineup-artist-name-second-line">Stan Silver
-                                <span class="lineup-artist-nationality-second-line">NL</span>
-                            </h1>
-                        </div>
-
-                    </div>
-
-                    <div class="lineup-img-box lineup-img-5">
-
-                        <div class="lineup-name-link">
-                            <h1 class="lineup-artist-name-second-line">James Smith
-                                <span class="lineup-artist-nationality-second-line">US</span>
-                            </h1>
-                        </div>
-
-                    </div>
-
-                    <div class="lineup-img-box lineup-img-6">
-
-                        <div class="lineup-name-link">
-                            <h1 class="lineup-artist-name-second-line">The Swagger
-                                <span class="lineup-artist-nationality-second-line">HR</span>
-                            </h1>
-                        </div>
-
-                    </div>
-
-                    <div class="lineup-img-box lineup-img-7">
-
-                        <div class="lineup-name-link">
-                            <h1 class="lineup-artist-name-second-line">Melody Liu
-                                <span class="lineup-artist-nationality-second-line">KR</span>
-                            </h1>
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-
-                <a href="#" class="btn-cta mg-top">Discover More</a>
-
-            </div>
-        </section>
-
-
-        <section class="section-ticket container text-center">
-
-            <div class="ticket">
-
-                <div class="section-textbox">
-                    <a class="heading-link" href="">
-                        <h1 class="section-primary-heading">Tickets</h1>
-                    </a>
-                    <h2 class="section-secondary-heading mg-top">Secure Your Ticket to the Ultimate Summer Music
-                        Destination!
-                    </h2>
-                </div>
-
-                <div class="gridbox grid-3-cols align-center col-gap ticket-box mg-top">
-
-                    <div class="ticket-card diflex ticket-bg">
-                        <h1 class="ticket-type">Regular Ticket</h1>
-                        <p class="ticket-price-range">from 89€ to 118€</p>
-                        <a class="cta-ticket" href="">
-                            <h3>More Info</h3>
-                        </a>
-                    </div>
-
-                    <div class="ticket-card diflex ticket-bg">
-                        <h1 class="ticket-type">VIP Ticket</h1>
-                        <p class="ticket-price-range">from 119€ to 159€</p>
-                        <a class="cta-ticket" href="">
-                            <h3>More Info</h3>
-                        </a>
-                    </div>
-
-                    <div class="ticket-card diflex ticket-bg">
-                        <h1 class="ticket-type">Camp Ticket</h1>
-                        <p class="ticket-price-range">from 59€ to 99€</p>
-                        <a class="cta-ticket" href="">
-                            <h3>More Info</h3>
-                        </a>
-                    </div>
-
-
-                </div>
-
-                <a class="btn-cta mg-top" href="">Buy Tickets</a>
-
-
-
-
+            <div class="lineup-img-box lineup-img-2">
+              <div class="lineup-name-link">
+                <h1 class="lineup-artist-name-first-line">
+                  Tyler Slow
+                  <span class="lineup-artist-nationality-first-line">UK</span>
+                </h1>
+              </div>
             </div>
 
-        </section>
+            <div class="lineup-img-box lineup-img-3">
+              <div class="lineup-name-link">
+                <h1 class="lineup-artist-name-first-line">
+                  The Daily Joys
+                  <span class="lineup-artist-nationality-first-line">FR</span>
+                </h1>
+              </div>
+            </div>
+          </div>
 
-
-
-        <section class="section-gallery container text-center">
-
-            <div class="gallery">
-
-                <div class="section-textbox">
-                    <a class="heading-link" href="">
-                        <h1 class="section-primary-heading">Gallery</h1>
-                    </a>
-                    <h2 class="section-secondary-heading">Take a Look Back at the Unforgettable Performances!
-                    </h2>
-                </div>
-
-                <div class="gridbox grid-4-cols align-center col-gap gallery-grid-box">
-
-                    <div class="gallery-img-box gallery-img-1">
-
-                        <a class="gallery-name-link" href="">
-                            <h1 class="gallery-year">2022</h1>
-                            <h2 class="gallery-city">London</h2>
-                        </a>
-
-                    </div>
-
-
-
-                    <div class="gallery-img-box gallery-img-2">
-
-                        <a class="gallery-name-link" href="">
-                            <h1 class="gallery-year">2021</h1>
-                            <h2 class="gallery-city">Paris</h2>
-                        </a>
-
-                    </div>
-
-                    <div class="gallery-img-box gallery-img-3">
-
-                        <a class="gallery-name-link" href="">
-                            <h1 class="gallery-year">2020</h1>
-                            <h2 class="gallery-city">Amsterdam</h2>
-                        </a>
-
-                    </div>
-
-                    <div class="gallery-img-box gallery-img-4">
-
-                        <a class="gallery-name-link" href="">
-                            <h1 class="gallery-year">2019</h1>
-                            <h2 class="gallery-city">Barcelona</h2>
-                        </a>
-
-                    </div>
-
-                    <div class="gallery-img-box gallery-img-5">
-
-                        <a class="gallery-name-link" href="">
-                            <h1 class="gallery-year">2018</h1>
-                            <h2 class="gallery-city">Rome</h2>
-                        </a>
-
-                    </div>
-
-                    <div class="gallery-img-box gallery-img-6">
-
-                        <a class="gallery-name-link" href="">
-                            <h1 class="gallery-year">2017</h1>
-                            <h2 class="gallery-city">Vienna</h2>
-                        </a>
-
-                    </div>
-
-                    <div class="gallery-img-box gallery-img-7">
-
-                        <a class="gallery-name-link" href="">
-                            <h1 class="gallery-year">2016</h1>
-                            <h2 class="gallery-city">Hamburg</h2>
-                        </a>
-
-                    </div>
-
-                    <div class="gallery-img-box gallery-img-8">
-
-                        <a class="gallery-name-link" href="">
-                            <h1 class="gallery-year">2015</h1>
-                            <h2 class="gallery-city">Split</h2>
-                        </a>
-
-                    </div>
-
-
-                </div>
-
-                <a class="btn-cta" href="">Check More</a>
-
-
+          <div class="gridbox grid-4-cols align-center col-gap lineup-box">
+            <div class="lineup-img-box lineup-img-4">
+              <div class="lineup-name-link">
+                <h1 class="lineup-artist-name-second-line">
+                  Stan Silver
+                  <span class="lineup-artist-nationality-second-line">NL</span>
+                </h1>
+              </div>
             </div>
 
-
-        </section>
-
-        <section class="section-newspaper container">
-
-            <div class="newspaper-box gridbox align-center">
-
-
-                <div class="newspaper-subscribe-text-box">
-
-                    <h1>Newsletter Subscribe</h1>
-
-                    <p>Be the first to know about the latest festival updates, artist, and exclusive
-                        content. Stay connected with us and
-                        make sure you don't miss a beat leading up to the biggest summer music festival!
-                    </p>
-
-                    <div class="cta-form gridbox grid-2-cols align-center">
-
-                        <div>
-                            <label for="first-name">First Name</label>
-                            <input id="first-name" type="text" placeholder="John" required />
-                        </div>
-
-                        <div>
-                            <label for="last-name">Last Name</label>
-                            <input id="full-name" type="text" placeholder="Smith" required />
-                        </div>
-
-                        <div class="email-fill">
-                            <label for="email">Email Address</label>
-                            <input id="email" type="email" placeholder="me@example.com" required />
-                        </div>
-
-
-                        <a class="subscribe-button" href="">Subscribe Now</a>
-
-                    </div>
-
-
-                </div>
-
-
-                <div class="newspaper-img-box" role="img"></div>
-
-
-
+            <div class="lineup-img-box lineup-img-5">
+              <div class="lineup-name-link">
+                <h1 class="lineup-artist-name-second-line">
+                  James Smith
+                  <span class="lineup-artist-nationality-second-line">US</span>
+                </h1>
+              </div>
             </div>
 
-
-
-        </section>
-
-        <section class="section-sponsors container text-center">
-
-            <div class="sponsors diflex">
-
-                <div class="section-textbox">
-                    <a class="heading-link" href="">
-                        <h1 class="section-sponsor-heading">Our Sponsors!
-                        </h1>
-                    </a>
-                </div>
-
-                <div class="donors-box gridbox grid-3-cols align-center">
-
-                    <a href="">
-                        <img src="./sponsors-logo/Kras-logo.png" alt="Kras Logo">
-                    </a>
-
-                    <a href="">
-                        <img src="./sponsors-logo/ozujsko-img.svg" alt="Ozujsko Logo">
-                    </a>
-
-                    <a href="">
-                        <img class="smaller-logo" src="./sponsors-logo/fwc-logo.png" alt="FWC Logo">
-                    </a>
-
-                    <a href="">
-                        <img src="./sponsors-logo/Batak-logo.svg" alt="Batak Logo">
-                    </a>
-
-                    <a href="">
-                        <img src="./sponsors-logo/karlovacko-logo.png" alt="Karlovacko Logo">
-                    </a>
-
-                    <a href="">
-                        <img class="smaller-logo" src="./sponsors-logo/cola-logo.svg" alt="Coca Cola Logo">
-                    </a>
-
-                </div>
-
-
+            <div class="lineup-img-box lineup-img-6">
+              <div class="lineup-name-link">
+                <h1 class="lineup-artist-name-second-line">
+                  The Swagger
+                  <span class="lineup-artist-nationality-second-line">HR</span>
+                </h1>
+              </div>
             </div>
 
+            <div class="lineup-img-box lineup-img-7">
+              <div class="lineup-name-link">
+                <h1 class="lineup-artist-name-second-line">
+                  Melody Liu
+                  <span class="lineup-artist-nationality-second-line">KR</span>
+                </h1>
+              </div>
+            </div>
+          </div>
 
-        </section>
+          <a href="#" class="btn-cta mg-top">Discover More</a>
+        </div>
+      </section>
 
-        <section class="section-follow-us">
-            <div class="follow-us container">
+      <section class="section-ticket container text-center">
+        <div class="ticket">
+          <div class="section-textbox">
+            <a class="heading-link" href="">
+              <h1 class="section-primary-heading">Tickets</h1>
+            </a>
+            <h2 class="section-secondary-heading mg-top">
+              Secure Your Ticket to the Ultimate Summer Music Destination!
+            </h2>
+          </div>
 
-                <h1 class="follow-us-text">Follow Us</h1>
-
-                <ul class="follow-social-media-icons-box diflex align-center">
-                    <li>
-                        <a class="follow-social-media-link" href="https://www.facebook.com/">
-                            <img class="follow-social-media-img" src="social-media-icon/facebook.png"
-                                alt="Facebook Icon">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="follow-social-media-link" href="https://www.instagram.com/">
-                            <img class="follow-social-media-img" src="social-media-icon/instagram.png"
-                                alt="Instagram Icon">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="follow-social-media-link" href="https://twitter.com/">
-                            <img class="follow-social-media-img" src="social-media-icon/twitter.png" alt="Twitter Icon">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="follow-social-media-link" href="https://www.youtube.com/">
-                            <img class="follow-social-media-img" src="social-media-icon/youtube.png" alt="Youtube Icon">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="follow-social-media-link" href="https://www.tiktok.com/en/">
-                            <img class="follow-social-media-img" src="social-media-icon/tik-tok.png" alt="Tiktok Icon">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="follow-social-media-link" href="https://open.spotify.com/">
-                            <img class="follow-social-media-img" src="social-media-icon/spotify-svgrepo-com.svg"
-                                alt="Spotify Icon">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="follow-social-media-link" href="https://www.google.com/intl/hr/gmail/about/">
-                            <img class="follow-social-media-img" src="social-media-icon/email-8-svgrepo-com.svg"
-                                alt="Email Icon">
-                        </a>
-                    </li>
-
-                </ul>
+          <div
+            class="gridbox grid-3-cols align-center col-gap ticket-box mg-top"
+          >
+            <div class="ticket-card diflex ticket-bg">
+              <h1 class="ticket-type">Regular Ticket</h1>
+              <p class="ticket-price-range">from 89€ to 118€</p>
+              <a class="cta-ticket" href="">
+                <h3>More Info</h3>
+              </a>
             </div>
 
-        </section>
+            <div class="ticket-card diflex ticket-bg">
+              <h1 class="ticket-type">VIP Ticket</h1>
+              <p class="ticket-price-range">from 119€ to 159€</p>
+              <a class="cta-ticket" href="">
+                <h3>More Info</h3>
+              </a>
+            </div>
 
+            <div class="ticket-card diflex ticket-bg">
+              <h1 class="ticket-type">Camp Ticket</h1>
+              <p class="ticket-price-range">from 59€ to 99€</p>
+              <a class="cta-ticket" href="">
+                <h3>More Info</h3>
+              </a>
+            </div>
+          </div>
+
+          <a class="btn-cta mg-top" href="">Buy Tickets</a>
+        </div>
+      </section>
+
+      <section class="section-gallery container text-center">
+        <div class="gallery">
+          <div class="section-textbox">
+            <a class="heading-link" href="">
+              <h1 class="section-primary-heading">Gallery</h1>
+            </a>
+            <h2 class="section-secondary-heading">
+              Take a Look Back at the Unforgettable Performances!
+            </h2>
+          </div>
+
+          <div
+            class="gridbox grid-4-cols align-center col-gap gallery-grid-box"
+          >
+            <div class="gallery-img-box gallery-img-1">
+              <a class="gallery-name-link" href="">
+                <h1 class="gallery-year">2022</h1>
+                <h2 class="gallery-city">London</h2>
+              </a>
+            </div>
+
+            <div class="gallery-img-box gallery-img-2">
+              <a class="gallery-name-link" href="">
+                <h1 class="gallery-year">2021</h1>
+                <h2 class="gallery-city">Paris</h2>
+              </a>
+            </div>
+
+            <div class="gallery-img-box gallery-img-3">
+              <a class="gallery-name-link" href="">
+                <h1 class="gallery-year">2020</h1>
+                <h2 class="gallery-city">Amsterdam</h2>
+              </a>
+            </div>
+
+            <div class="gallery-img-box gallery-img-4">
+              <a class="gallery-name-link" href="">
+                <h1 class="gallery-year">2019</h1>
+                <h2 class="gallery-city">Barcelona</h2>
+              </a>
+            </div>
+
+            <div class="gallery-img-box gallery-img-5">
+              <a class="gallery-name-link" href="">
+                <h1 class="gallery-year">2018</h1>
+                <h2 class="gallery-city">Rome</h2>
+              </a>
+            </div>
+
+            <div class="gallery-img-box gallery-img-6">
+              <a class="gallery-name-link" href="">
+                <h1 class="gallery-year">2017</h1>
+                <h2 class="gallery-city">Vienna</h2>
+              </a>
+            </div>
+
+            <div class="gallery-img-box gallery-img-7">
+              <a class="gallery-name-link" href="">
+                <h1 class="gallery-year">2016</h1>
+                <h2 class="gallery-city">Hamburg</h2>
+              </a>
+            </div>
+
+            <div class="gallery-img-box gallery-img-8">
+              <a class="gallery-name-link" href="">
+                <h1 class="gallery-year">2015</h1>
+                <h2 class="gallery-city">Split</h2>
+              </a>
+            </div>
+          </div>
+
+          <a class="btn-cta" href="">Check More</a>
+        </div>
+      </section>
+
+      <section class="section-newspaper container">
+        <div class="newspaper-box gridbox align-center">
+          <div class="newspaper-subscribe-text-box">
+            <h1>Newsletter Subscribe</h1>
+
+            <p>
+              Be the first to know about the latest festival updates, artist,
+              and exclusive content. Stay connected with us and make sure you
+              don't miss a beat leading up to the biggest summer music festival!
+            </p>
+
+            <div class="cta-form gridbox grid-2-cols align-center">
+              <div>
+                <label for="first-name">First Name</label>
+                <input
+                  id="first-name"
+                  type="text"
+                  placeholder="John"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="last-name">Last Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="Smith"
+                  required
+                />
+              </div>
+
+              <div class="email-fill">
+                <label for="email">Email Address</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="me@example.com"
+                  required
+                />
+              </div>
+
+              <a class="subscribe-button" href="">Subscribe Now</a>
+            </div>
+          </div>
+
+          <div class="newspaper-img-box" role="img"></div>
+        </div>
+      </section>
+
+      <section class="section-sponsors container text-center">
+        <div class="sponsors diflex">
+          <div class="section-textbox">
+            <a class="heading-link" href="">
+              <h1 class="section-sponsor-heading">Our Sponsors!</h1>
+            </a>
+          </div>
+
+          <div class="donors-box gridbox grid-3-cols align-center">
+            <a href="">
+              <img src="./sponsors-logo/Kras-logo.png" alt="Kras Logo" />
+            </a>
+
+            <a href="">
+              <img src="./sponsors-logo/ozujsko-img.svg" alt="Ozujsko Logo" />
+            </a>
+
+            <a href="">
+              <img
+                class="smaller-logo"
+                src="./sponsors-logo/fwc-logo.png"
+                alt="FWC Logo"
+              />
+            </a>
+
+            <a href="">
+              <img src="./sponsors-logo/Batak-logo.svg" alt="Batak Logo" />
+            </a>
+
+            <a href="">
+              <img
+                src="./sponsors-logo/karlovacko-logo.png"
+                alt="Karlovacko Logo"
+              />
+            </a>
+
+            <a href="">
+              <img
+                class="smaller-logo"
+                src="./sponsors-logo/cola-logo.svg"
+                alt="Coca Cola Logo"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-follow-us">
+        <div class="follow-us container">
+          <h1 class="follow-us-text">Follow Us</h1>
+
+          <ul class="follow-social-media-icons-box diflex align-center">
+            <li>
+              <a
+                class="follow-social-media-link"
+                href="https://www.facebook.com/"
+              >
+                <img
+                  class="follow-social-media-img"
+                  src="social-media-icon/facebook.png"
+                  alt="Facebook Icon"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="follow-social-media-link"
+                href="https://www.instagram.com/"
+              >
+                <img
+                  class="follow-social-media-img"
+                  src="social-media-icon/instagram.png"
+                  alt="Instagram Icon"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a class="follow-social-media-link" href="https://twitter.com/">
+                <img
+                  class="follow-social-media-img"
+                  src="social-media-icon/twitter.png"
+                  alt="Twitter Icon"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="follow-social-media-link"
+                href="https://www.youtube.com/"
+              >
+                <img
+                  class="follow-social-media-img"
+                  src="social-media-icon/youtube.png"
+                  alt="Youtube Icon"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="follow-social-media-link"
+                href="https://www.tiktok.com/en/"
+              >
+                <img
+                  class="follow-social-media-img"
+                  src="social-media-icon/tik-tok.png"
+                  alt="Tiktok Icon"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="follow-social-media-link"
+                href="https://open.spotify.com/"
+              >
+                <img
+                  class="follow-social-media-img"
+                  src="social-media-icon/spotify-svgrepo-com.svg"
+                  alt="Spotify Icon"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="follow-social-media-link"
+                href="https://www.google.com/intl/hr/gmail/about/"
+              >
+                <img
+                  class="follow-social-media-img"
+                  src="social-media-icon/email-8-svgrepo-com.svg"
+                  alt="Email Icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-
     <footer class="footer-box diflex">
+      <div class="footer-links-box gridbox grid-3-cols align-center">
+        <div class="footer-link-box diflex">
+          <h1 class="footer-title">Links</h1>
 
-        <div class="footer-links-box gridbox grid-3-cols align-center">
-
-            <div class="footer-link-box diflex">
-                <h1 class="footer-title">Links</h1>
-
-                <div class="footer-links diflex">
-                    <a href="">
-                        <span class="footer-link-text">Lineup</span>
-                    </a>
-                    <a href="">
-                        <span class="footer-link-text">Tickets</span>
-                    </a>
-                    <a href="">
-                        <span class="footer-link-text">Gallery</span>
-                    </a>
-                    <a href="">
-                        <span class="footer-link-text">News</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="footer-link-box diflex">
-                <h1 class="footer-title">Resources</h1>
-
-                <div class="footer-links diflex">
-                    <a href="">
-                        <span class="footer-link-text">Contact</span>
-                    </a>
-                    <a href="">
-                        <span class="footer-link-text">Location</span>
-                    </a>
-                    <a href="">
-                        <span class="footer-link-text">Help Center</span>
-                    </a>
-                    <a href="">
-                        <span class="footer-link-text">FAQ</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="footer-link-box diflex ">
-                <h1 class="footer-title">Accounts</h1>
-
-                <div class="footer-links diflex">
-                    <a href="">
-                        <span class="footer-link-text">Create account</span>
-                    </a>
-                    <a href="">
-                        <span class="footer-link-text">Sign in</span>
-                    </a>
-                    <a href="">
-                        <span class="footer-link-text">Policy&terms</span>
-                    </a>
-
-                    <a href="">
-                        <span class="footer-link-text">Press</span>
-                    </a>
-
-                </div>
-            </div>
-
+          <div class="footer-links diflex">
+            <a href="">
+              <span class="footer-link-text">Lineup</span>
+            </a>
+            <a href="">
+              <span class="footer-link-text">Tickets</span>
+            </a>
+            <a href="">
+              <span class="footer-link-text">Gallery</span>
+            </a>
+            <a href="">
+              <span class="footer-link-text">News</span>
+            </a>
+          </div>
         </div>
 
-        <div class="footer-text">
-            <p class="copyright-text">&copy; 2023 Summer Splash Hits. All rights reserved.</p>
+        <div class="footer-link-box diflex">
+          <h1 class="footer-title">Resources</h1>
 
-            <p>By visiting this website you accept the terms and conditions found in Terms of Use as well as our Policy
-                Privacy.
-            </p>
+          <div class="footer-links diflex">
+            <a href="">
+              <span class="footer-link-text">Contact</span>
+            </a>
+            <a href="">
+              <span class="footer-link-text">Location</span>
+            </a>
+            <a href="">
+              <span class="footer-link-text">Help Center</span>
+            </a>
+            <a href="">
+              <span class="footer-link-text">FAQ</span>
+            </a>
+          </div>
         </div>
 
+        <div class="footer-link-box diflex">
+          <h1 class="footer-title">Accounts</h1>
+
+          <div class="footer-links diflex">
+            <a href="">
+              <span class="footer-link-text">Create account</span>
+            </a>
+            <a href="">
+              <span class="footer-link-text">Sign in</span>
+            </a>
+            <a href="">
+              <span class="footer-link-text">Policy&terms</span>
+            </a>
+
+            <a href="">
+              <span class="footer-link-text">Press</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-text">
+        <p class="copyright-text">
+          &copy; 2023 Summer Splash Hits. All rights reserved.
+        </p>
+
+        <p>
+          By visiting this website you accept the terms and conditions found in
+          Terms of Use as well as our Policy Privacy.
+        </p>
+      </div>
     </footer>
-
-
-</body>
-
+  </body>
 </html>
